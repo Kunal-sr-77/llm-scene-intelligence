@@ -158,8 +158,6 @@ http://127.0.0.1:8000
 * accuracy
 * error_distribution
 
----
-
 ## Installation
 
 ### 1. Clone the Repository
@@ -201,31 +199,6 @@ touch .env
 ```bash
 echo "OPENROUTER_API_KEY=your_api_key" >> .env
 ```
-
----
-
-## Running the System
-
-```bash
-uvicorn api:app --reload
-```
-
-Access API documentation:
-http://127.0.0.1:8000/docs
-
----
-
-## Testing the System
-
-```bash
-# Generate dataset
-python -m pipeline.generate_dataset
-
-# Evaluate dataset
-python -m pipeline.evaluate_dataset
-```
-
----
 
 ## Tech Stack
 
