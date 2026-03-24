@@ -155,30 +155,47 @@ Returns:
 * accuracy
 * error_distribution
 
----
-
 ## Installation
 
+### 1. Clone the Repository
+
 ```bash
-# Clone the repository
 git clone https://github.com/Kunal-sr-77/llm-scene-intelligence.git
 cd llm-scene-intelligence
-
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Create environment file
-touch .env
-
-# Add your API key
-echo "OPENROUTER_API_KEY=your_api_key" >> .env
 ```
 
 ---
+
+### 2. Create Virtual Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4. Create Environment File
+
+```bash
+touch .env
+```
+
+---
+
+### 5. Add API Key
+
+```bash
+echo "OPENROUTER_API_KEY=your_api_key" >> .env
+```
 
 ## Running the System
 
