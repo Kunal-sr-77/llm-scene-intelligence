@@ -1,10 +1,18 @@
 # LLM Scene Intelligence
 
 Evaluation-driven LLM system for generating and validating autonomous driving decisions with measurable performance improvements.
+This project focuses on evaluating and improving LLM reliability rather than just generating outputs.
 
 ---
 
+## Highlights
 
+* Improved decision accuracy from **45.45% → 81.82%** through prompt optimization
+* Evaluated **50+ synthetic driving scenarios** using rule-based validation
+* Identified key failure mode: **vague_action (26% of errors)**
+* Built end-to-end pipeline with **LLM + validation + error analysis + API deployment**
+
+---
 
 ## Problem Statement
 
@@ -15,17 +23,6 @@ Key challenges:
 * Lack of structured outputs for downstream systems
 * Vague or non-actionable recommendations
 * No built-in evaluation mechanism to verify correctness
-
----
-
----
-
-## Highlights
-
-* Improved decision accuracy from **45.45% → 81.82%** through prompt optimization
-* Evaluated **50+ synthetic driving scenarios** using rule-based validation
-* Identified key failure mode: **vague_action (26% of errors)**
-* Built end-to-end pipeline with **LLM + validation + error analysis + API deployment**
 
 ---
 
@@ -92,7 +89,9 @@ Balancing constraint and flexibility is critical for reliable LLM behavior.
 
 ## Dataset Generation
 
-Synthetic dataset is generated using LLM:
+Synthetic dataset is generated using LLM.
+
+**Note:** This system uses synthetic scene inputs for controlled evaluation of LLM decision-making behavior.
 
 Input:
 
@@ -117,13 +116,15 @@ http://127.0.0.1:8000
 
 ### POST /analyze
 
+**Request:**
+
 ```json
 {
   "objects": ["person", "car"]
 }
 ```
 
-Returns:
+**Returns:**
 
 * output (LLM decision)
 * is_valid (validation result)
@@ -134,13 +135,15 @@ Returns:
 
 ### POST /compare
 
+**Request:**
+
 ```json
 {
   "objects": ["person"]
 }
 ```
 
-Returns:
+**Returns:**
 
 * outputs from prompt_v1, prompt_v2, prompt_v3
 * validation results
@@ -149,11 +152,13 @@ Returns:
 
 ### GET /metrics
 
-Returns:
+**Returns:**
 
 * total_samples
 * accuracy
 * error_distribution
+
+---
 
 ## Installation
 
@@ -197,14 +202,15 @@ touch .env
 echo "OPENROUTER_API_KEY=your_api_key" >> .env
 ```
 
+---
+
 ## Running the System
 
 ```bash
-# Start FastAPI server
 uvicorn api:app --reload
 ```
 
-Open in browser:
+Access API documentation:
 http://127.0.0.1:8000/docs
 
 ---
