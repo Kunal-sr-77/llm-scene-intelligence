@@ -1,0 +1,523 @@
+[
+  {
+    "input": [
+      "bicycle",
+      "person",
+      "truck"
+    ],
+    "output": {
+      "scene_description": "There is a person, a bicycle, and a truck in the scene.",
+      "risk_level": "high",
+      "recommended_action": "Slow down and be prepared to stop in case the person crosses the road."
+    }
+  },
+  {
+    "input": [
+      "dog"
+    ],
+    "output": {
+      "scene_description": "There is a dog in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be prepared to slow down in case the dog crosses the road."
+    }
+  },
+  {
+    "input": [
+      "bicycle"
+    ],
+    "output": {
+      "scene_description": "There is a bicycle present in the driving scene.",
+      "risk_level": "low",
+      "recommended_action": "Proceed with caution and watch out for any potential hazards."
+    }
+  },
+  {
+    "input": [
+      "dog",
+      "bicycle",
+      "person"
+    ],
+    "output": {
+      "scene_description": "There is a dog, a bicycle, and a person in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Brake immediately and proceed with caution to avoid hitting the person."
+    }
+  },
+  {
+    "input": [
+      "car",
+      "dog"
+    ],
+    "output": {
+      "scene_description": "There is a car and a dog in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Be cautious and prepared to slow down or stop in case the dog crosses the road unexpectedly."
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "person"
+    ],
+    "output": {
+      "scene_description": "There is a bicycle and a person in the scene.",
+      "risk_level": "high",
+      "recommended_action": "Immediately slow down and be prepared to stop to avoid any potential collision with the person."
+    }
+  },
+  {
+    "input": [
+      "car",
+      "dog"
+    ],
+    "output": {
+      "scene_description": "The scene includes a car and a dog.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be prepared to stop in case the dog behaves unpredictably."
+    }
+  },
+  {
+    "input": [
+      "car",
+      "truck",
+      "person"
+    ],
+    "output": {
+      "scene_description": "The scene consists of a car, a truck, and a person.",
+      "risk_level": "high",
+      "recommended_action": "Proceed with extreme caution and be prepared to stop to avoid hitting the person."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty with no detected objects.",
+      "risk_level": "low",
+      "recommended_action": "Continue driving cautiously while observing the surroundings."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty",
+      "risk_level": "low",
+      "recommended_action": "Continue driving cautiously"
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "truck",
+      "person"
+    ],
+    "output": {
+      "scene_description": "A person, a bicycle, and a truck are present in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Slow down and be prepared to stop to avoid any potential collision with the person."
+    }
+  },
+  {
+    "input": [
+      "person"
+    ],
+    "output": {
+      "scene_description": "A person is present on the road.",
+      "risk_level": "high",
+      "recommended_action": "Brake immediately and proceed with caution to avoid hitting the pedestrian."
+    }
+  },
+  {
+    "input": [
+      "dog",
+      "person"
+    ],
+    "output": {
+      "scene_description": "A person and a dog are present in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Immediately slow down and be prepared to stop to avoid any potential collision with the person and dog."
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "truck"
+    ],
+    "output": {
+      "scene_description": "The scene consists of a bicycle and a truck on the road.",
+      "risk_level": "medium",
+      "recommended_action": "Approach with caution and maintain a safe distance from the truck and bicycle."
+    }
+  },
+  {
+    "input": [
+      "car",
+      "bicycle"
+    ],
+    "output": {
+      "scene_description": "The scene contains a car and a bicycle on the road.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be prepared for potential unpredictable movements from the car and bicycle."
+    }
+  },
+  {
+    "input": [
+      "truck",
+      "dog",
+      "person"
+    ],
+    "output": {
+      "scene_description": "The driving scene includes a truck, a dog, and a person.",
+      "risk_level": "high",
+      "recommended_action": "Slow down and be prepared to stop in case the person or dog move unpredictably."
+    }
+  },
+  {
+    "input": [
+      "car"
+    ],
+    "output": {
+      "scene_description": "There is a car in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Reduce speed and maintain a safe following distance from the car."
+    }
+  },
+  {
+    "input": [
+      "truck"
+    ],
+    "output": {
+      "scene_description": "A truck on the road",
+      "risk_level": "medium",
+      "recommended_action": "Maintain a safe distance from the truck and be cautious of its movements."
+    }
+  },
+  {
+    "input": [
+      "dog"
+    ],
+    "output": {
+      "scene_description": "The driving scene contains a dog.",
+      "risk_level": "low",
+      "recommended_action": "Be cautious and slow down, as animals can be unpredictable."
+    }
+  },
+  {
+    "input": [
+      "person",
+      "car",
+      "bicycle"
+    ],
+    "output": {
+      "scene_description": "There is a person, a car, and a bicycle in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Slow down and be prepared to stop to avoid any potential collision with the pedestrian."
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "person"
+    ],
+    "output": {
+      "scene_description": "There is a person and a bicycle in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Slow down and be prepared to stop in case the person crosses the road."
+    }
+  },
+  {
+    "input": [
+      "person"
+    ],
+    "output": {
+      "scene_description": "A person is present on the road.",
+      "risk_level": "high",
+      "recommended_action": "Reduce speed and be prepared to stop to avoid any potential collision with the pedestrian."
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "person",
+      "dog"
+    ],
+    "output": {
+      "scene_description": "There is a bicycle, a person, and a dog in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Proceed with extreme caution and be prepared to stop for the safety of the person."
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "car",
+      "dog"
+    ],
+    "output": {
+      "scene_description": "The scene includes a bicycle, a car, and a dog.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be prepared to slow down in case the car or bicycle make unexpected movements. Keep an eye out for the dog to ensure it doesn't run into the road."
+    }
+  },
+  {
+    "input": [
+      "dog",
+      "bicycle"
+    ],
+    "output": {
+      "scene_description": "A dog and a bicycle are in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be prepared to slow down or stop if necessary."
+    }
+  },
+  {
+    "input": [
+      "bicycle"
+    ],
+    "output": {
+      "scene_description": "There is a bicycle detected in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be prepared to yield to the bicycle."
+    }
+  },
+  {
+    "input": [
+      "car"
+    ],
+    "output": {
+      "scene_description": "There is a car in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and maintain a safe distance from the car."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty with no pedestrians or vehicles in sight.",
+      "risk_level": "low",
+      "recommended_action": "Continue driving cautiously while obeying traffic rules."
+    }
+  },
+  {
+    "input": [
+      "dog",
+      "person",
+      "bicycle"
+    ],
+    "output": {
+      "scene_description": "There is a person, a dog, and a bicycle in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Proceed with extreme caution and be prepared to stop in case the person or dog unexpectedly moves into the path of the vehicle."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty.",
+      "risk_level": "low",
+      "recommended_action": "Continue driving cautiously."
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "dog",
+      "person"
+    ],
+    "output": {
+      "scene_description": "There is a bicycle, a dog, and a person in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Immediately stop the vehicle and ensure the safety of the person."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty with no detected objects.",
+      "risk_level": "low",
+      "recommended_action": "Continue driving safely."
+    }
+  },
+  {
+    "input": [
+      "dog"
+    ],
+    "output": {
+      "scene_description": "The scene contains a dog.",
+      "risk_level": "low",
+      "recommended_action": "Drive cautiously and be aware of unexpected movements from the dog."
+    }
+  },
+  {
+    "input": [
+      "car"
+    ],
+    "output": {
+      "scene_description": "The driving scene contains a car.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and maintain a safe distance from the car."
+    }
+  },
+  {
+    "input": [
+      "person",
+      "dog"
+    ],
+    "output": {
+      "scene_description": "A person and a dog are present in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Immediately slow down and be prepared to stop to avoid any potential accidents with the pedestrian."
+    }
+  },
+  {
+    "input": [
+      "person",
+      "car",
+      "truck"
+    ],
+    "output": {
+      "scene_description": "There is a person, a car, and a truck in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Immediately slow down and be prepared to stop in case the person crosses the road unpredictably."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty",
+      "risk_level": "low",
+      "recommended_action": "Drive cautiously and obey traffic rules"
+    }
+  },
+  {
+    "input": [
+      "truck",
+      "bicycle",
+      "car"
+    ],
+    "output": {
+      "scene_description": "There is a truck, a bicycle, and a car in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be aware of the other vehicles on the road."
+    }
+  },
+  {
+    "input": [
+      "car",
+      "dog"
+    ],
+    "output": {
+      "scene_description": "There is a car and a dog in the driving scene.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and be prepared to slow down or stop in case the dog crosses the road."
+    }
+  },
+  {
+    "input": [
+      "truck",
+      "person",
+      "dog"
+    ],
+    "output": {
+      "scene_description": "There is a truck, a person, and a dog in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Slow down and be prepared to stop to avoid potential accidents with the person and the dog."
+    }
+  },
+  {
+    "input": [
+      "dog",
+      "car",
+      "truck"
+    ],
+    "output": {
+      "scene_description": "The scene contains a dog, a car, and a truck.",
+      "risk_level": "medium",
+      "recommended_action": "Proceed with caution and maintain a safe distance from the other vehicles."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty",
+      "risk_level": "low",
+      "recommended_action": "Drive cautiously and adhere to all traffic rules"
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty.",
+      "risk_level": "low",
+      "recommended_action": "Continue driving cautiously and be alert for any potential hazards."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty.",
+      "risk_level": "low",
+      "recommended_action": "Continue driving at a safe speed."
+    }
+  },
+  {
+    "input": [
+      "car",
+      "person"
+    ],
+    "output": {
+      "scene_description": "There is a car and a person in the driving scene.",
+      "risk_level": "high",
+      "recommended_action": "Proceed with extreme caution and be prepared to stop in case the person moves unpredictably."
+    }
+  },
+  {
+    "input": [
+      "bicycle"
+    ],
+    "output": {
+      "scene_description": "A bicycle is present on the road.",
+      "risk_level": "medium",
+      "recommended_action": "Reduce speed and be prepared to brake in case the cyclist makes sudden movements."
+    }
+  },
+  {
+    "input": [],
+    "output": {
+      "scene_description": "The road is empty.",
+      "risk_level": "low",
+      "recommended_action": "Continue driving safely observing all traffic rules."
+    }
+  },
+  {
+    "input": [
+      "person"
+    ],
+    "output": {
+      "scene_description": "A person is present on the road.",
+      "risk_level": "high",
+      "recommended_action": "Stop the vehicle and wait for the person to clear the road safely before proceeding."
+    }
+  },
+  {
+    "input": [
+      "truck",
+      "car"
+    ],
+    "output": {
+      "scene_description": "The scene contains a truck and a car on the road.",
+      "risk_level": "medium",
+      "recommended_action": "Maintain a safe distance from the vehicles and drive cautiously."
+    }
+  },
+  {
+    "input": [
+      "bicycle",
+      "person"
+    ],
+    "output": {
+      "scene_description": "A person riding a bicycle on the road",
+      "risk_level": "high",
+      "recommended_action": "Reduce speed and prepare to stop to avoid any potential collision with the person on the bicycle."
+    }
+  }
+]

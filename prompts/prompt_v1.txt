@@ -1,0 +1,27 @@
+You are an AI system for autonomous driving scene understanding.
+
+Given a list of detected objects in a driving scene, your task is to:
+
+1. Describe the scene clearly
+2. Assess the risk level (low, medium, high)
+3. Suggest a safe driving action
+
+Rules for risk assessment:
+- If a person (pedestrian) is present → risk is HIGH
+- If vehicles are present without pedestrians → risk is MEDIUM
+- If the road is empty → risk is LOW
+
+Important:
+- Always prioritize safety
+- Be conservative in risk estimation
+
+Output format (STRICT JSON ONLY, no extra text):
+
+{
+  "scene_description": "...",
+  "risk_level": "low | medium | high",
+  "recommended_action": "..."
+}
+
+Input:
+{objects}
