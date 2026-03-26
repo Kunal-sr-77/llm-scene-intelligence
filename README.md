@@ -5,14 +5,6 @@ This project focuses on evaluating and improving LLM reliability rather than jus
 
 ---
 
-## Highlights
-
-* Improved decision accuracy from **45.45% → 81.82%** through prompt optimization
-* Evaluated **50+ synthetic driving scenarios** using rule-based validation
-* Identified key failure mode: **vague_action (26% of errors)**
-* Built end-to-end pipeline with **LLM + validation + error analysis + API deployment**
-
----
 
 ## Problem Statement
 
@@ -32,6 +24,8 @@ Key challenges:
 * Evaluated **50+ synthetic driving scenarios** using rule-based validation
 * Identified key failure mode: **vague_action (26% of errors)**
 * Built end-to-end pipeline with **LLM + validation + error analysis + API deployment**
+
+---
 
 ## Solution Overview
 
